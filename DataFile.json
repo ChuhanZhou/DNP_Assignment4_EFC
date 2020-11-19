@@ -1,0 +1,230 @@
+{
+  "UserList": {
+    "Users": [
+      {
+        "UserName": "1",
+        "Password": "1"
+      },
+      {
+        "UserName": "294409",
+        "Password": "123"
+      }
+    ]
+  },
+  "FamilyList": {
+    "families": [
+      {
+        "StreetName": "Schicksal Street",
+        "HouseNumber": 2,
+        "Adults": {
+          "adults": [
+            {
+              "JobTitle": "Soldier",
+              "Id": 1001,
+              "FirstName": "Siegfried",
+              "LastName": "Kaslana",
+              "HairColor": "White",
+              "EyeColor": "Blue",
+              "Age": 42,
+              "Weight": 85,
+              "Height": 185,
+              "Sex": "M"
+            },
+            {
+              "JobTitle": "Soldier",
+              "Id": 1002,
+              "FirstName": "Cecilia",
+              "LastName": "Schariac",
+              "HairColor": "White",
+              "EyeColor": "Blue",
+              "Age": 40,
+              "Weight": 55,
+              "Height": 169,
+              "Sex": "F"
+            }
+          ]
+        },
+        "Children": {
+          "childs": [
+            {
+              "ChildInterests": [
+                {
+                  "Type": "Gaming"
+                },
+                {
+                  "Type": "Ballet"
+                }
+              ],
+              "Pets": [
+                {
+                  "Id": 0,
+                  "Species": "Dog",
+                  "Name": "Bella",
+                  "Age": 2
+                }
+              ],
+              "Id": 423,
+              "FirstName": "Kiana",
+              "LastName": "Kaslana",
+              "HairColor": "White",
+              "EyeColor": "Blue",
+              "Age": 19,
+              "Weight": 49,
+              "Height": 163,
+              "Sex": "F"
+            }
+          ]
+        },
+        "Pets": []
+      },
+      {
+        "StreetName": "Raiden Street",
+        "HouseNumber": 1,
+        "Adults": {
+          "adults": [
+            {
+              "JobTitle": "Entrepreneur",
+              "Id": 1003,
+              "FirstName": "Ry\u014Dma",
+              "LastName": "Raiden",
+              "HairColor": "Black",
+              "EyeColor": "Brown",
+              "Age": 40,
+              "Weight": 79,
+              "Height": 180,
+              "Sex": "M"
+            }
+          ]
+        },
+        "Children": {
+          "childs": [
+            {
+              "ChildInterests": [
+                {
+                  "Type": "Frozen"
+                },
+                {
+                  "Type": "Board Games"
+                }
+              ],
+              "Pets": [],
+              "Id": 413,
+              "FirstName": "Mei",
+              "LastName": "Raiden",
+              "HairColor": "Black",
+              "EyeColor": "Brown",
+              "Age": 19,
+              "Weight": 55,
+              "Height": 172,
+              "Sex": "F"
+            }
+          ]
+        },
+        "Pets": []
+      }
+    ]
+  },
+  "AdultList": {
+    "adults": [
+      {
+        "JobTitle": "Soldier",
+        "Id": 1001,
+        "FirstName": "Siegfried",
+        "LastName": "Kaslana",
+        "HairColor": "White",
+        "EyeColor": "Blue",
+        "Age": 42,
+        "Weight": 85,
+        "Height": 185,
+        "Sex": "M"
+      },
+      {
+        "JobTitle": "Soldier",
+        "Id": 1002,
+        "FirstName": "Cecilia",
+        "LastName": "Schariac",
+        "HairColor": "White",
+        "EyeColor": "Blue",
+        "Age": 40,
+        "Weight": 55,
+        "Height": 169,
+        "Sex": "F"
+      },
+      {
+        "JobTitle": "Entrepreneur",
+        "Id": 1003,
+        "FirstName": "Ry\u014Dma",
+        "LastName": "Raiden",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 40,
+        "Weight": 79,
+        "Height": 180,
+        "Sex": "M"
+      },
+      {
+        "JobTitle": "Teacher",
+        "Id": 310,
+        "FirstName": "Theresa",
+        "LastName": "Apocalypse",
+        "HairColor": "White",
+        "EyeColor": "Blue",
+        "Age": 45,
+        "Weight": 38,
+        "Height": 145,
+        "Sex": "F"
+      }
+    ]
+  },
+  "ChildList": {
+    "childs": [
+      {
+        "ChildInterests": [
+          {
+            "Type": "Gaming"
+          },
+          {
+            "Type": "Ballet"
+          }
+        ],
+        "Pets": [
+          {
+            "Id": 0,
+            "Species": "Dog",
+            "Name": "Bella",
+            "Age": 2
+          }
+        ],
+        "Id": 423,
+        "FirstName": "Kiana",
+        "LastName": "Kaslana",
+        "HairColor": "White",
+        "EyeColor": "Blue",
+        "Age": 19,
+        "Weight": 49,
+        "Height": 163,
+        "Sex": "F"
+      },
+      {
+        "ChildInterests": [
+          {
+            "Type": "Frozen"
+          },
+          {
+            "Type": "Board Games"
+          }
+        ],
+        "Pets": [],
+        "Id": 413,
+        "FirstName": "Mei",
+        "LastName": "Raiden",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 19,
+        "Weight": 55,
+        "Height": 172,
+        "Sex": "F"
+      }
+    ]
+  }
+}
