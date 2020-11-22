@@ -4,10 +4,6 @@
       {
         "UserName": "1",
         "Password": "1"
-      },
-      {
-        "UserName": "294409",
-        "Password": "123"
       }
     ]
   },
@@ -20,6 +16,7 @@
           "adults": [
             {
               "JobTitle": "Soldier",
+              "AdultFamilies": null,
               "Id": 1001,
               "FirstName": "Siegfried",
               "LastName": "Kaslana",
@@ -32,6 +29,7 @@
             },
             {
               "JobTitle": "Soldier",
+              "AdultFamilies": null,
               "Id": 1002,
               "FirstName": "Cecilia",
               "LastName": "Schariac",
@@ -47,16 +45,10 @@
         "Children": {
           "childs": [
             {
-              "ChildInterests": [
-                {
-                  "Type": "Gaming"
-                },
-                {
-                  "Type": "Ballet"
-                }
-              ],
+              "ChildInterests": [],
               "Pets": [
                 {
+                  "PetId": "423[0]",
                   "Id": 0,
                   "Species": "Dog",
                   "Name": "Bella",
@@ -84,6 +76,7 @@
           "adults": [
             {
               "JobTitle": "Entrepreneur",
+              "AdultFamilies": null,
               "Id": 1003,
               "FirstName": "Ry\u014Dma",
               "LastName": "Raiden",
@@ -101,10 +94,16 @@
             {
               "ChildInterests": [
                 {
-                  "Type": "Frozen"
+                  "Type": "Board Games",
+                  "ChildInterest": null
                 },
                 {
-                  "Type": "Board Games"
+                  "Type": "Roller Blades",
+                  "ChildInterest": null
+                },
+                {
+                  "Type": "Kite Flying",
+                  "ChildInterest": null
                 }
               ],
               "Pets": [],
@@ -127,7 +126,21 @@
   "AdultList": {
     "adults": [
       {
+        "JobTitle": "Teacher",
+        "AdultFamilies": null,
+        "Id": 310,
+        "FirstName": "Theresa",
+        "LastName": "Apocalypse",
+        "HairColor": "White",
+        "EyeColor": "Blue",
+        "Age": 45,
+        "Weight": 38,
+        "Height": 145,
+        "Sex": "F"
+      },
+      {
         "JobTitle": "Soldier",
+        "AdultFamilies": null,
         "Id": 1001,
         "FirstName": "Siegfried",
         "LastName": "Kaslana",
@@ -140,6 +153,7 @@
       },
       {
         "JobTitle": "Soldier",
+        "AdultFamilies": null,
         "Id": 1002,
         "FirstName": "Cecilia",
         "LastName": "Schariac",
@@ -152,6 +166,7 @@
       },
       {
         "JobTitle": "Entrepreneur",
+        "AdultFamilies": null,
         "Id": 1003,
         "FirstName": "Ry\u014Dma",
         "LastName": "Raiden",
@@ -161,18 +176,6 @@
         "Weight": 79,
         "Height": 180,
         "Sex": "M"
-      },
-      {
-        "JobTitle": "Teacher",
-        "Id": 310,
-        "FirstName": "Theresa",
-        "LastName": "Apocalypse",
-        "HairColor": "White",
-        "EyeColor": "Blue",
-        "Age": 45,
-        "Weight": 38,
-        "Height": 145,
-        "Sex": "F"
       }
     ]
   },
@@ -181,14 +184,34 @@
       {
         "ChildInterests": [
           {
-            "Type": "Gaming"
+            "Type": "Board Games",
+            "ChildInterest": null
           },
           {
-            "Type": "Ballet"
+            "Type": "Roller Blades",
+            "ChildInterest": null
+          },
+          {
+            "Type": "Kite Flying",
+            "ChildInterest": null
           }
         ],
+        "Pets": [],
+        "Id": 413,
+        "FirstName": "Mei",
+        "LastName": "Raiden",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 19,
+        "Weight": 55,
+        "Height": 172,
+        "Sex": "F"
+      },
+      {
+        "ChildInterests": [],
         "Pets": [
           {
+            "PetId": "423[0]",
             "Id": 0,
             "Species": "Dog",
             "Name": "Bella",
@@ -203,26 +226,6 @@
         "Age": 19,
         "Weight": 49,
         "Height": 163,
-        "Sex": "F"
-      },
-      {
-        "ChildInterests": [
-          {
-            "Type": "Frozen"
-          },
-          {
-            "Type": "Board Games"
-          }
-        ],
-        "Pets": [],
-        "Id": 413,
-        "FirstName": "Mei",
-        "LastName": "Raiden",
-        "HairColor": "Black",
-        "EyeColor": "Brown",
-        "Age": 19,
-        "Weight": 55,
-        "Height": 172,
         "Sex": "F"
       }
     ]

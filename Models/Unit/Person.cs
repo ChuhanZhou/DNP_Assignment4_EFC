@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text.Json;
+using DNP_Assignment4_EFC.Models.DbUnit;
 
 namespace DNP_Assignment4_EFC.Models.Unit  {
 public class Person {
@@ -23,9 +24,9 @@ public class Person {
     {
         "M", "F"
     }.ToList();
-    
+
+    [Key]
     public int Id { get; set; }
-    
     [NotNull]
     public string FirstName { get; set; }
     [NotNull]

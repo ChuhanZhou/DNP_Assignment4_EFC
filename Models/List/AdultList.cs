@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using DNP_Assignment4_EFC.Models.Unit;
 
@@ -11,6 +12,11 @@ namespace DNP_Assignment4_EFC.Models.List
         public AdultList()
         {
             adults = new List<Adult>();
+        }
+        
+        public AdultList(List<Adult> adults)
+        {
+            this.adults = new List<Adult>(adults);
         }
 
         public string AddAdult(Adult newAdult)

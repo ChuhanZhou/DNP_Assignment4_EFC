@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.Json;
+using DNP_Assignment4_EFC.Models.DbUnit;
 
 namespace DNP_Assignment4_EFC.Models.Unit  {
 public class Interest {
@@ -12,8 +13,9 @@ public class Interest {
         "Scout", "Gymnastics", "Harry Potter", "Frozen"
     }.ToList();
     
-    [ValidInterest]
+    [Key,ValidInterest]
     public string Type { get; set; }
+    public IList<DbChildInterest> ChildInterest { get; set; }
 }
 public class ValidInterest : ValidationAttribute {
     protected override ValidationResult IsValid(object value, ValidationContext validationContext)

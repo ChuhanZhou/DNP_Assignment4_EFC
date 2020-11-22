@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using DNP_Assignment4_EFC.Models.Unit;
 
@@ -13,6 +15,11 @@ namespace DNP_Assignment4_EFC.Models.List
             childs = new List<Child>();
         }
 
+        public ChildList(List<Child> children)
+        {
+            childs = new List<Child>(children);
+        }
+        
         public string AddChild(Child newChild)
         {
             if (newChild!=null)
@@ -20,6 +27,14 @@ namespace DNP_Assignment4_EFC.Models.List
                 if (childs.Any(Child => Child.Id==newChild.Id))
                 {
                     return "This id is used.";
+                }
+
+                if (newChild.Pets!=null)
+                {
+                    foreach (var pet in newChild.Pets)
+                    {
+                        pet.PetId = newChild.Id + "[" + pet.Id + "]";
+                    }
                 }
                 childs.Add(newChild);
                 return null;
@@ -150,6 +165,7 @@ namespace DNP_Assignment4_EFC.Models.List
         {
             childs.RemoveAt(index);
         }
+        
         public ChildList GetAllWithChildList()
         {
             var copy = new ChildList();
@@ -180,6 +196,10 @@ namespace DNP_Assignment4_EFC.Models.List
         {
             foreach (Child child in childs.Where(child=>child.Id==newChild.Id))
             {
+                foreach (var pet in newChild.Pets)
+                {
+                    pet.PetId = newChild.Id + "[" + pet.Id + "]";
+                }
                 child.Update(newChild);
                 return null;
             }

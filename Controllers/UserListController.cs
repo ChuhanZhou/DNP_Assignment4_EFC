@@ -26,7 +26,7 @@ namespace DNP_Assignment4_EFC.Controllers
         {
             try
             {
-                return modelManager.AddUser(newUser);
+                return await modelManager.AddUser(newUser);
             }
             catch (Exception e)
             {
@@ -71,7 +71,7 @@ namespace DNP_Assignment4_EFC.Controllers
         {
             try
             {
-                return modelManager.UpdatePassword(userList[0],userList[1]);
+                return await modelManager.UpdatePassword(userList[0],userList[1]);
             }
             catch (Exception e)
             {
@@ -85,7 +85,7 @@ namespace DNP_Assignment4_EFC.Controllers
         {
             try
             {
-                modelManager.RemoveUser(modelManager.GetAllUser().GetUserByUserName(userName));
+                await modelManager.RemoveUser(modelManager.GetAllUser().GetUserByUserName(userName));
             }
             catch (Exception e)
             {

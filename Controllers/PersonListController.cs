@@ -57,7 +57,7 @@ namespace DNP_Assignment4_EFC.Controllers
                 {
                     newPerson = JsonSerializer.Deserialize<Child>(newPersonJson);
                 }
-                return modelManager.UpdatePerson(newPerson);
+                return await modelManager.UpdatePerson(newPerson);
             }
             catch (Exception e)
             {

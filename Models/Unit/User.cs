@@ -1,10 +1,11 @@
-﻿using System.Diagnostics.CodeAnalysis;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 
 namespace DNP_Assignment4_EFC.Models.Unit 
 {
     public class User
     {
-        [NotNull]
+        [Key,NotNull]
         public string UserName { get; set; }
         [NotNull]
         public string Password { get; set; }

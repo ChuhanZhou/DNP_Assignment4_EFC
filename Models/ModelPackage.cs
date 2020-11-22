@@ -15,5 +15,16 @@ namespace DNP_Assignment4_EFC.Models
             AdultList = new AdultList();
             ChildList = new ChildList();
         }
+
+        public ModelPackage Copy()
+        {
+            return new ModelPackage
+            {
+                UserList = UserList.GetAllUser(),
+                FamilyList = FamilyList.GetAllWithFamilyList(),
+                AdultList = AdultList.GetAllWithAdultList(),
+                ChildList = ChildList.GetAllWithChildList()
+            };
+        }
     }
 }

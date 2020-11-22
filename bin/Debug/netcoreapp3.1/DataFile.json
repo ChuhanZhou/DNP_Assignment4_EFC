@@ -4,15 +4,70 @@
       {
         "UserName": "1",
         "Password": "1"
-      },
-      {
-        "UserName": "294409",
-        "Password": "123"
       }
     ]
   },
   "FamilyList": {
     "families": [
+      {
+        "StreetName": "Raiden Street",
+        "HouseNumber": 1,
+        "Adults": {
+          "adults": [
+            {
+              "JobTitle": "Entrepreneur",
+              "AdultFamilies": null,
+              "Id": 1003,
+              "FirstName": "Ry\u014Dma",
+              "LastName": "Raiden",
+              "HairColor": "Black",
+              "EyeColor": "Brown",
+              "Age": 40,
+              "Weight": 79,
+              "Height": 180,
+              "Sex": "M"
+            }
+          ]
+        },
+        "Children": {
+          "childs": [
+            {
+              "ChildInterests": [
+                {
+                  "Type": "Board Games",
+                  "ChildInterest": null
+                }
+              ],
+              "Pets": [
+                {
+                  "PetId": null,
+                  "Id": 1,
+                  "Species": "Hamster",
+                  "Name": "1",
+                  "Age": 1
+                },
+                {
+                  "PetId": null,
+                  "Id": 2,
+                  "Species": "Hamster",
+                  "Name": "2",
+                  "Age": 2
+                }
+              ],
+              "Id": 413,
+              "FirstName": "Mei",
+              "LastName": "Raiden",
+              "HairColor": "Black",
+              "EyeColor": "Brown",
+              "Age": 19,
+              "Weight": 55,
+              "Height": 172,
+              "Sex": "F"
+            }
+          ]
+        },
+        "Pets": []
+      },
       {
         "StreetName": "Schicksal Street",
         "HouseNumber": 2,
@@ -20,6 +75,7 @@
           "adults": [
             {
               "JobTitle": "Soldier",
+              "AdultFamilies": null,
               "Id": 1001,
               "FirstName": "Siegfried",
               "LastName": "Kaslana",
@@ -32,6 +88,7 @@
             },
             {
               "JobTitle": "Soldier",
+              "AdultFamilies": null,
               "Id": 1002,
               "FirstName": "Cecilia",
               "LastName": "Schariac",
@@ -47,16 +104,10 @@
         "Children": {
           "childs": [
             {
-              "ChildInterests": [
-                {
-                  "Type": "Gaming"
-                },
-                {
-                  "Type": "Ballet"
-                }
-              ],
+              "ChildInterests": [],
               "Pets": [
                 {
+                  "PetId": "423[0]",
                   "Id": 0,
                   "Species": "Dog",
                   "Name": "Bella",
@@ -76,58 +127,27 @@
           ]
         },
         "Pets": []
-      },
-      {
-        "StreetName": "Raiden Street",
-        "HouseNumber": 1,
-        "Adults": {
-          "adults": [
-            {
-              "JobTitle": "Entrepreneur",
-              "Id": 1003,
-              "FirstName": "Ry\u014Dma",
-              "LastName": "Raiden",
-              "HairColor": "Black",
-              "EyeColor": "Brown",
-              "Age": 40,
-              "Weight": 79,
-              "Height": 180,
-              "Sex": "M"
-            }
-          ]
-        },
-        "Children": {
-          "childs": [
-            {
-              "ChildInterests": [
-                {
-                  "Type": "Frozen"
-                },
-                {
-                  "Type": "Board Games"
-                }
-              ],
-              "Pets": [],
-              "Id": 413,
-              "FirstName": "Mei",
-              "LastName": "Raiden",
-              "HairColor": "Black",
-              "EyeColor": "Brown",
-              "Age": 19,
-              "Weight": 55,
-              "Height": 172,
-              "Sex": "F"
-            }
-          ]
-        },
-        "Pets": []
       }
     ]
   },
   "AdultList": {
     "adults": [
       {
+        "JobTitle": "Teacher",
+        "AdultFamilies": null,
+        "Id": 310,
+        "FirstName": "Theresa",
+        "LastName": "Apocalypse",
+        "HairColor": "White",
+        "EyeColor": "Blue",
+        "Age": 45,
+        "Weight": 38,
+        "Height": 145,
+        "Sex": "F"
+      },
+      {
         "JobTitle": "Soldier",
+        "AdultFamilies": null,
         "Id": 1001,
         "FirstName": "Siegfried",
         "LastName": "Kaslana",
@@ -140,6 +160,7 @@
       },
       {
         "JobTitle": "Soldier",
+        "AdultFamilies": null,
         "Id": 1002,
         "FirstName": "Cecilia",
         "LastName": "Schariac",
@@ -152,6 +173,7 @@
       },
       {
         "JobTitle": "Entrepreneur",
+        "AdultFamilies": null,
         "Id": 1003,
         "FirstName": "Ry\u014Dma",
         "LastName": "Raiden",
@@ -161,18 +183,6 @@
         "Weight": 79,
         "Height": 180,
         "Sex": "M"
-      },
-      {
-        "JobTitle": "Teacher",
-        "Id": 310,
-        "FirstName": "Theresa",
-        "LastName": "Apocalypse",
-        "HairColor": "White",
-        "EyeColor": "Blue",
-        "Age": 45,
-        "Weight": 38,
-        "Height": 145,
-        "Sex": "F"
       }
     ]
   },
@@ -181,14 +191,41 @@
       {
         "ChildInterests": [
           {
-            "Type": "Gaming"
-          },
-          {
-            "Type": "Ballet"
+            "Type": "Board Games",
+            "ChildInterest": null
           }
         ],
         "Pets": [
           {
+            "PetId": "413[1]",
+            "Id": 1,
+            "Species": "Hamster",
+            "Name": "1",
+            "Age": 1
+          },
+          {
+            "PetId": "413[2]",
+            "Id": 2,
+            "Species": "Hamster",
+            "Name": "2",
+            "Age": 2
+          }
+        ],
+        "Id": 413,
+        "FirstName": "Mei",
+        "LastName": "Raiden",
+        "HairColor": "Black",
+        "EyeColor": "Brown",
+        "Age": 19,
+        "Weight": 55,
+        "Height": 172,
+        "Sex": "F"
+      },
+      {
+        "ChildInterests": [],
+        "Pets": [
+          {
+            "PetId": "423[0]",
             "Id": 0,
             "Species": "Dog",
             "Name": "Bella",
@@ -203,26 +240,6 @@
         "Age": 19,
         "Weight": 49,
         "Height": 163,
-        "Sex": "F"
-      },
-      {
-        "ChildInterests": [
-          {
-            "Type": "Frozen"
-          },
-          {
-            "Type": "Board Games"
-          }
-        ],
-        "Pets": [],
-        "Id": 413,
-        "FirstName": "Mei",
-        "LastName": "Raiden",
-        "HairColor": "Black",
-        "EyeColor": "Brown",
-        "Age": 19,
-        "Weight": 55,
-        "Height": 172,
         "Sex": "F"
       }
     ]

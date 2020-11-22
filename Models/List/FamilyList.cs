@@ -21,6 +21,10 @@ namespace DNP_Assignment4_EFC.Models.List
                     return "This address is used.";
                 }
             }
+            foreach (var pet in newFamily.Pets)
+            {
+                pet.PetId = newFamily.ToDb().Address + "[" + pet.Id + "]";
+            }
             families.Add(newFamily);
             return null;
         }
@@ -117,6 +121,10 @@ namespace DNP_Assignment4_EFC.Models.List
             {
                 if (families[i].HouseNumber.Equals(oldFamily.HouseNumber)&&families[i].StreetName.Equals(oldFamily.StreetName))
                 {
+                    foreach (var pet in newFamily.Pets)
+                    {
+                        pet.PetId = newFamily.ToDb().Address + "[" + pet.Id + "]";
+                    }
                     families[i] = newFamily;
                     return null;
                 }

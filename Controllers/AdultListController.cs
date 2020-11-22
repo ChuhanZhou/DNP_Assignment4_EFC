@@ -25,7 +25,7 @@ namespace DNP_Assignment4_EFC.Controllers
         {
             try
             {
-                return modelManager.AddAdult(newAdult);
+                return await modelManager.AddAdult(newAdult);
             }
             catch (Exception e)
             {

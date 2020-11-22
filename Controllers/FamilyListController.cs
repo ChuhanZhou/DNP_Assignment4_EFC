@@ -26,7 +26,7 @@ namespace DNP_Assignment4_EFC.Controllers
         {
             try
             {
-                return modelManager.AddFamily(newFamily);
+                return await modelManager.AddFamily(newFamily);
             }
             catch (Exception e)
             {
@@ -55,7 +55,7 @@ namespace DNP_Assignment4_EFC.Controllers
         {
             try
             {
-                return modelManager.UpdateFamily(familyList[0], familyList[1]);
+                return await modelManager.UpdateFamily(familyList[0], familyList[1]);
             }
             catch (Exception e)
             {

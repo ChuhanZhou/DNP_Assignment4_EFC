@@ -9,6 +9,8 @@ public class Pet {
         "Hamster", "Bunny", "Frog", "Budgerigar",
         "Owl", "Snake","Dog","Cat"
     }.ToList();
+    [Key]
+    public string PetId { get; set; }
     public int Id { get; set; }
     [Required]
     [ValidSpecies]

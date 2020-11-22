@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.Json;
 using System.Threading.Tasks;
+using DNP_Assignment4_EFC.Data;
 using DNP_Assignment4_EFC.Models;
 using DNP_Assignment4_EFC.Persistence;
 using Microsoft.AspNetCore.Mvc;
@@ -11,19 +12,19 @@ namespace DNP_Assignment4_EFC.Controllers
     [Route("api/all")]
     public class ModelPackageController : ControllerBase
     {
-        private ModelPackage modelPackage;
+        private IModelManager modelManager;
 
         public ModelPackageController()
         {
-            modelPackage = new ModelPackage();
+            modelManager = ModelManager.GetModelManager();
         }
 
         [HttpGet]
         public async Task<ActionResult<ModelPackage>> GetAllData()
         {
+            ModelPackage modelPackage = modelManager.GetModelPackage();
             try
             {
-                DataFileContext.ReadData("DataFile.json",modelPackage);
                 return Ok(JsonSerializer.Serialize(modelPackage,new JsonSerializerOptions {WriteIndented = true}));
             }
             catch (Exception e)

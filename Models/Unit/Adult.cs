@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text.Json;
+using DNP_Assignment4_EFC.Models.DbUnit;
 
 namespace DNP_Assignment4_EFC.Models.Unit {
 public class Adult : Person {
@@ -14,6 +15,8 @@ public class Adult : Person {
     }.ToList();
     [ValidJob]
     public string JobTitle { get; set; }
+    
+    public IList<DbAdultFamily> AdultFamilies {get; set;}
 
     public override string ToString() {
         return JsonSerializer.Serialize(this);
